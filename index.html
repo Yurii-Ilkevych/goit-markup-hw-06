@@ -382,12 +382,24 @@
             </li>
           </ul>
         </div>
-        <div>
+        <div class="form-footer">
           <h2 class="footer-text">Subscribe</h2>
-          <form action="">
-            <label for="send"></label>
-            <input type="email" name="email" id="send" placeholder="E-mail" />
-            <button type="submit">Subscribe</button>
+
+          <form>
+            <div class="form-footer-primary">
+              <label for="send"></label>
+              <input
+                class="input-footer"
+                type="email"
+                name="email"
+                id="send"
+                placeholder="E-mail"
+              />
+              <button class="btn-form-footer" type="submit">Subscribe</button>
+              <svg class="submit-icon" width="24" height="20">
+                <use href="./images/icons.svg#icon-icon-send"></use>
+              </svg>
+            </div>
           </form>
         </div>
       </div>
@@ -397,29 +409,45 @@
       <div class="modal">
         <button class="button-modal" type="button" data-modal-close>
           <svg width="8" height="8">
-            <use href="./images/symbol-defs-close.svg#icon-Vector"></use>
+            <use href="./images/icons.svg#icon-Vector"></use>
           </svg>
         </button>
         <div class="modal-container">
           <h2 class="text-modal">
             Leave your contacts and we will call you back
           </h2>
-          <form action="">
-            <div class="form-group">
+          <form>
+            <div class="form-group name">
               <label class="form-label" for="name">Name</label>
               <input class="form-input" type="text" name="name" id="name" />
+              <svg class="icon-form" width="12" height="12">
+                <use href="./images/icons.svg#icon-icon-name"></use>
+              </svg>
             </div>
-            <div class="form-group">
+            <div class="form-group tel">
               <label class="form-label" for="phone">Phone</label>
-              <input class="form-input" type="tel" name="tel" id="phone" />
+              <input
+                placeholder=" "
+                class="form-input"
+                type="tel"
+                name="tel"
+                id="phone"
+              />
+              <svg class="icon-form" width="13" height="13">
+                <use href="./images/icons.svg#icon-icon-tel"></use>
+              </svg>
             </div>
-            <div class="form-group">
+            <div class="form-group email">
               <label class="form-label" for="email">Email</label>
               <input class="form-input" type="email" name="email" id="email" />
+              <svg class="icon-form" width="15" height="12">
+                <use href="./images/icons.svg#icon-icon-email"></use>
+              </svg>
             </div>
             <div class="form-group">
               <label class="form-label" for="comment">Comment</label>
-              <textarea class="form-textarea"
+              <textarea
+                class="form-textarea"
                 name="comment"
                 id="comment"
                 placeholder="Text input"
@@ -427,13 +455,21 @@
               ></textarea>
             </div>
             <div class="form-agree">
-            <input type="checkbox" name="" id="agree" value="agree" />
-            <label class="text-agree" for="agree"
-              >I accept the terms and conditions of the <a href="/index.html" class="privacy">Privacy Policy</a></label
-            >
-          </div>
-            <div class="form-submit" >
-              <button class="button-secondary" type="submit">Send</button>
+              <label class="text-agree">
+                <input class="input-checkbox" type="checkbox" name="checkbox" />
+                <span class="checkbox">
+                  <svg class="icon-form-checkbox" width="10" height="8">
+                    <use href="./images/icons.svg#icon-click-ok"></use>
+                  </svg> </span
+                >I accept the terms and conditions of the<a
+                  href="/index.html"
+                  class="privacy"
+                  >Privacy Policy</a
+                >
+              </label>
+            </div>
+            <div class="form-submit">
+              <button class="button-form-modal" type="submit">Send</button>
             </div>
           </form>
         </div>
